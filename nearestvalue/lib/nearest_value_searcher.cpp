@@ -15,7 +15,7 @@ namespace nearestvaluesearcher
     }
 }
 
-#define CODERUNNER 0
+#define CODERUNNER 1
 #if CODERUNNER
 int main()
 {
