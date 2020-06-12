@@ -4,4 +4,7 @@ cc_library(
     hdrs = glob(["**/*.h"]),
     copts = ["-Wall"],
     visibility = ["//visibility:public"],
+    deps = [
+        "@boost//:algorithm",
+    ],
 )

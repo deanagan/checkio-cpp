@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/lib",
-                "${workspaceFolder}/bazel-${workspaceFolderBasename}/external/googletest/googletest/include"
+                "${workspaceFolder}/bazel-${workspaceFolderBasename}/external/googletest/googletest/include",
+                "${workspaceFolder}/bazel-${workspaceFolderBasename}/external/boost"
             ],
             "defines": [
                 "_DEBUG",
