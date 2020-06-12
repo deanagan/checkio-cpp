@@ -7,9 +7,32 @@
 
 namespace firstwordsearcher
 {
+    namespace
+    {
+        const auto APOSTROPHE = '\'';
+    }
     std::string FirstWordSearcher::First(const std::string& input) const
     {
-        return "Hello";
+        using namespace std;
+        std::string output;
+
+        const auto is_valid_char = [](auto ch) { return (isalpha(ch) || (ch == APOSTROPHE)); };
+
+        copy_if(begin(input), end(input), back_inserter(output),
+            [&is_valid_char, active = false, done = false](auto ch) mutable {
+                if (is_valid_char(ch) && !done) {
+                    active = true;
+                } else {
+                    if (active) {
+                        done = true;
+                    }
+                    active = false;
+                }
+
+                return active;
+        });
+
+        return output;
     }
 
 }
@@ -21,6 +44,8 @@ int main()
     using namespace firstwordsearcher;
     using namespace std;
 
-
+    FirstWordSearcher searcher;
+    std::cout << "*" << searcher.First(" a word") << "* \n";
+    std::cout << "Space is alpha?" << std::boolalpha << isalpha(' ') << "\n";
 }
 #endif
