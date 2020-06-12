@@ -46,6 +46,6 @@ int main()
 
     FirstWordSearcher searcher;
     std::cout << "*" << searcher.First(" a word") << "* \n";
-    std::cout << "Space is alpha?" << std::boolalpha << isalpha(' ') << "\n";
+
 }
 #endif
