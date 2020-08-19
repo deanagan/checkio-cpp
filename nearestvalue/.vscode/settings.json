@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "xutility": "cpp"
-    },
-    "files.exclude": {
-        "**/*.exe": true,
-        "**/bazel-*/": true
-    },
-}

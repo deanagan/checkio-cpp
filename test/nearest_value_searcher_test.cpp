@@ -1,6 +1,6 @@
 #include "nearest_value_searcher.h"
 
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
 
 #include <vector>
 

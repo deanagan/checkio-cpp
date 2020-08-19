@@ -1,6 +1,6 @@
 #include "first_word_searcher.h"
 
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
 
 #include <vector>
 
