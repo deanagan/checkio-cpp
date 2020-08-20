@@ -23,14 +23,14 @@ class ParameteredValidParenthesesShould : public ValidParenthesesShould,
 
 INSTANTIATE_TEST_SUITE_P(StringsWithParenthesesToEvaluateAndExpectations,
                          ParameteredValidParenthesesShould,
-                         testing::Values(// std::make_tuple("()", true)
-                                        // , std::make_tuple("()[]{}", true)
-                                        // , std::make_tuple("(]", false)
-                                        // , std::make_tuple("([)]", false)
-                                        // , std::make_tuple("{[]}", true)
-                                        //, std::make_tuple("]", false)
-                                        std::make_tuple("(])", false)
-                                        //, std::make_tuple("){", false)
+                         testing::Values( std::make_tuple("()", true)
+                                        , std::make_tuple("()[]{}", true)
+                                        , std::make_tuple("(]", false)
+                                        , std::make_tuple("([)]", false)
+                                        , std::make_tuple("{[]}", true)
+                                        , std::make_tuple("]", false)
+                                        , std::make_tuple("(])", false)
+                                        , std::make_tuple("){", false)
                          ));
 
 TEST_P(ParameteredValidParenthesesShould, ReturnExpectedBracketValidity_WhenGivenParameters)
