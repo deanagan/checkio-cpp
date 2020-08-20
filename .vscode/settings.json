@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "deque": "cpp"
     },
     "files.exclude": {
         "**/*.exe": true,
