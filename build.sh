@@ -1,1 +1,1 @@
-bazel build ... --cxxopt='-std=c++14'
+bazel build ... --cxxopt=-std=c++17
