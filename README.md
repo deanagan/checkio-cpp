@@ -1,5 +1,7 @@
-# cpp-design-patterns
-A collection of C++ Solutions to Checkio problems.
+[![Build Status](https://travis-ci.com/deanagan/practice-cpp.svg?branch=master)](https://travis-ci.com/github/deanagan/practice-cpp)
+
+# Practicing C++
+A collection of C++ source code for popular coding platforms like Leetcode, Hackerrank, etc
 
 
 # How To Run the Source
